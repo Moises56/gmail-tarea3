@@ -173,7 +173,7 @@ body{
     color: #fff;
 }
 
-.sidebar ul li .bxl-google{
+.sidebar ul li .fa-google{
     position: absolute;
     z-index: 99;
     color: #e72525;
@@ -183,17 +183,17 @@ body{
     
 }
 
-.sidebar.active ul li .bxl-google{
+.sidebar.active ul li .fa-google{
     opacity: 0;
 
 }
 
-.sidebar ul li .bxl-google:hover{
+.sidebar ul li .fa-google:hover{
     background: #fff;
     color: #1d1b31;
     opacity: 1;
 }
-.sidebar.active ul li .bxl-google:hover{
+.sidebar.active ul li .fa-google:hover{
     opacity: 0;
 }
 
