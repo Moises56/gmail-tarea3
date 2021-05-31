@@ -1,0 +1,269 @@
+.contenedor{
+    width: 1000%;
+    max-width: 1160px;
+    margin: 0;
+}
+
+.tabla{
+    width: 115%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.tabla thead{
+    display: none;
+}
+/* 
+.tabla caption{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+} */
+
+.tabla tr{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.tabla th, .tabla td{
+    font-size: 15px;
+    padding: 8px;
+    /* text-align: center; */
+}
+
+/* .tabla thead th{
+    text-transform: uppercase;
+    background-color: #ddd;
+} */
+
+.tabla tbody tr:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tabla tbody td:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(10, 9, 9);
+}
+
+.nombres{
+    text-align: left;
+}
+.hora{
+    text-align: center;
+}
+
+.estrella{
+    font-size: 20px;
+    cursor: pointer;
+}
+.estrella:hover{
+    font-size: 20px;
+    color: green;
+}
+
+.fa-exclamation-triangle{
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-exclamation-triangle:hover{
+    font-size: 20px;
+    color: red;
+}
+
+.fa-trash-alt{
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+.fa-eye{
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.fa-eye:hover{
+    font-size: 20px;
+    color: rgb(41, 255, 34);
+}
+
+
+
+.destacado {
+    color: #b0bd06;
+    border-color: rgb(26, 26, 9);
+  }
+  
+.leido {
+    color: #8b8d8ff2;
+}
+
+/* .fa-star:hover{
+    pointer-events: auto;
+    f
+} */
+
+
+@media screen and (max-width: 600px) {
+    .tabla{
+        border: 0px;
+    }
+    /* .tabla caption{
+        font-size: 22px;
+    } */
+    .tabla thead{
+        display: none;
+    }
+    .tabla tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    .tabla th, .tabla td{
+        font-size: 12px;
+    }
+    .tabla td{
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .tabla td:last-child{
+        border-bottom: 0px;
+    }
+
+    /* .tabla td::before{
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    } */
+
+
+/* 
+    .hora{
+        text-align: left;
+    } */
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+    .contenedor{
+        /* width: 1000%; */
+        max-width: 800px;
+        margin: 0;
+    }
+
+    .tabla{
+        border: 0px;
+    }
+    /* .tabla caption{
+        font-size: 22px;
+    } */
+    .tabla thead{
+        display: none;
+    }
+    .tabla tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        /* display: block; */
+    }
+    .tabla th, .tabla td{
+        font-size: 15px;
+    }
+    .tabla td{
+        /* display: block; */
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .tabla td:last-child{
+        border-bottom: 0px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .contenedor{
+        /* width: 1000%; */
+        max-width: 1000px;
+        margin: 0;
+    }
+
+    .tabla{
+        border: 0px;
+    }
+    /* .tabla caption{
+        font-size: 22px;
+    } */
+    .tabla thead{
+        display: none;
+    }
+    .tabla tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        /* display: block; */
+    }
+    .tabla th, .tabla td{
+        font-size: 12px;
+    }
+    .tabla td{
+        /* display: block; */
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .tabla td:last-child{
+        border-bottom: 0px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .contenedor{
+        /* width: 1000%; */
+        max-width: 1160px;
+        margin: 0;
+    }
+
+    .tabla{
+        border: 0px;
+    }
+    /* .tabla caption{
+        font-size: 22px;
+    } */
+    .tabla thead{
+        display: none;
+    }
+    .tabla tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        /* display: block; */
+    }
+    .tabla th, .tabla td{
+        font-size: 15px;
+    }
+    .tabla td{
+        /* display: block; */
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .tabla td:last-child{
+        border-bottom: 0px;
+    }
+}
+

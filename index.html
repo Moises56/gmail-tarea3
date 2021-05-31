@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <!--* boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- *boxicons -->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
+
+        <!--Para Iconos-FontAwesome-->
+        <script src="https://kit.fontawesome.com/0174cae6ac.js" crossorigin="anonymous"></script>
+
+    <!--* My Style CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tabla.css">
+    <!--  FontAwesome -->
+    <!-- <link rel="stylesheet" href="/css/all.css">    -->
+
+</head>
+<body>
+  
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bxl-google'></i>
+                <div class="logo-name">mail</div>
+                <!-- <img class="img-logo" src="/img/logo-gmail.png" alt="">               -->
+            </div>
+            <!-- <i class='bx bx-menu' id="btn"></i> -->
+            <i class="fas fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+           
+            <li>
+                <i class='bx bxl-google' onclick="btnRedactar()"></i>
+                <!-- <i class='bx bx-search' ></i> -->
+               <button class="btn btn-redactar" onclick="btnRedactar()">Redactar</button>                
+                 <span class="tooltip">Redactar</span>
+             </li>
+          
+            <li>
+                <a href="#" onclick="msjRecibidos()">
+                    <!-- <i class='bx bx-chat' ></i> -->
+                    <i class="far fa-envelope"></i>
+                    <span  class="links-name">Recibidos</span>
+                </a>
+                <span class="tooltip">Recibidos</span>
+            </li>
+            <li>
+                <a href="#" onclick="msjEnviados()">
+                    <!-- <i class='bx bx-send'></i> -->
+                    <i class="fas fa-paper-plane"></i>
+                    <span class="links-name">Enviados</span>
+                </a>
+                <span class="tooltip">Enviados</span>
+            </li>
+            <li>
+                <a href="#" onclick="msjDestacados()">
+                    <!-- <i class='bx bx-star'></i> -->
+                    <i class="far fa-star"></i>
+                    <span class="links-name">Destacados</span>
+                </a>
+                <span class="tooltip">Destacados</span>
+            </li>
+            <li>
+                <a href="#" onclick="msjSpan()">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="links-name">Span</span>
+                </a>
+                <span class="tooltip">Span</span>
+            </li>
+            <li>
+                <a href="#" onclick="msjPapelera()">
+                    <!-- <i class='bx bx-trash'></i> -->
+                    <i class="far fa-trash-alt"></i>
+                    <span class="links-name">Papelera</span>
+                </a>
+                <span class="tooltip">Papelera</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="/img/profile.jpeg" alt="">
+                    <div class="name-job">
+                        <div class="name">Swam Jewel</div>
+                        <div class="job">Web Designer</div>
+                    </div>
+                </div>
+                <i class="fas fa-sign-in-alt" id="log-out"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-content">
+        <!-- <div class="text">Home Content</div> -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand logo-name" href="#">
+                <img src="/img/logo-gmail.png" alt="" class="d-inline-block align-text-top">
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Buscar Correo">                
+                  <!-- <span class="tooltip">Search</span> -->
+                </a>
+               
+                </div>
+                <i class="far fa-question-circle"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-th"></i>
+            </nav>
+          <!-- <h1>A un minuto de ti</h1> -->
+            <div class="contenedor">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Mensaje</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="msj-recibidos">
+                        <!-- <tr > -->
+                            <!-- <td data-label="consola" class="nombres">
+                                <i class="far fa-star"></i>
+                                <i class="fas fa-exclamation-triangle"></i>
+                                Juan Perez
+                            </td>
+                            <td data-label="precio">Tarea Primer Parcial-Lorem ipsum dolor sit amet.</td>
+                            <td data-label="fechas" class="hora">10:00 am
+                                <i class="far fa-trash-alt"></i>
+                            </td> -->
+                        <!-- </tr> --> 
+                    </tbody>
+
+                </table>
+            </div>
+
+
+        </div>
+        <div id="redactarMsj">
+            <div class="card">
+                <div class="card-header">
+                 <b> Mensaje Nuevo</b> <i class="fas fa-times"  onclick="btnRedactar()"></i>
+                </div>
+                <div class="card-body">
+                    <div> <b>De:</b> <input class="input1-redactar" type="text" id="receptor"></div>
+                    <div> <b>Para:</b> <input class="input2-redactar" type="text" id="emailReceptor"></div>
+                    <div> <b>Asunto:</b> <input class="input3-redactar" type="text" id="asunt"></div>
+                    <div> <b>Mensaje:</b> <textarea class="textarea-redactar" id="mensaj" cols="30" rows="10"></textarea></div>
+                   <button class="btn btn-enviar" onclick="msjNuevo()">Enviar</button>
+                </div>
+              </div>
+        </div>
+
+
+    <!-- *bootstrap -->
+    <script src="/js/controlador.js"></script>
+    <script src="/js/sidebar.js"></script>
+    <!-- <script src="/js/jquery-3.4.1.min.js"></script> -->
+    <!-- <script src="/js/popper.min.js"></script> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
